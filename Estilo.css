@@ -7,25 +7,21 @@ body
 {
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    color: white;
 }
 
 img
 {
-    width: 50px;
-    height: 50px;
+    width: 100px;
 }
 
 .coluna1,.coluna2,.coluna3
 {
-    width: 33.3%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 50px 50px;
+    width: 33%;
+    height: 100%;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding: 0 60px;
 }
 
 .coluna1
@@ -41,4 +37,83 @@ img
 .coluna3
 {
     background-color: hsl(179, 100%, 13%);
+}
+
+.imagem
+{
+    margin-top: 50px;
+}
+
+.titulo
+{
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+.texto
+{
+    margin-top: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 35px;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+button
+{
+    border-radius: 50px;
+    border: 0;
+    height: 70px;
+    width: 220px;
+}
+
+input
+{
+    font-size: 1.5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 50px;
+    border-color: white;
+    height: 70px;
+    width: 220px;
+    cursor: pointer;
+    margin-top: 90px;
+    transition: all .3s ease-in-out;
+}
+
+.coluna1 input
+{
+    color:hsl(31, 77%, 52%);
+}
+
+.coluna2 input
+{
+    color:hsl(184, 100%, 22%);
+}
+
+.coluna3 input
+{
+    color:hsl(179, 100%, 13%);
+}
+
+
+.coluna1 input:hover
+{
+    background-color:hsl(31, 77%, 52%);
+    color: white;
+    border-color: white;
+}
+
+.coluna2 input:hover
+{
+    background-color:hsl(184, 100%, 22%);
+    color: white;
+    border-color: white;
+}
+
+.coluna3 input:hover
+{
+    background-color:hsl(179, 100%, 13%);
+    color: white;
+    border-color: white;
 }
